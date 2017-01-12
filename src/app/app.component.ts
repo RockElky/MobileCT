@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { MainPage } from '../pages/MainPage/MainPage';
-import { Page2 } from '../pages/page2/page2';
+import { AttrAndChars } from '../pages/AttrAndChars/AttrAndChars';
 
 
 @Component({
@@ -21,7 +21,8 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Choose Race', component: Page2 }
+      { title: 'Main Page', component: MainPage },
+      { title: 'Attributes and Characteristics', component: AttrAndChars }
     ];
 
   }
