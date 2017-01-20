@@ -4,6 +4,17 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { MainPage } from '../pages/MainPage/MainPage';
 import { AttrAndChars } from '../pages/AttrAndChars/AttrAndChars';
+import { Combat } from '../pages/Combat/Combat';
+import { Details } from '../pages/Details/Details';
+import { FullSheet } from'../pages/FullSheet/FullSheet';
+import { AdvAndAchieve } from '../pages/AdvAndAchieve/AdvAndAchieve'
+import { Gear } from '../pages/Gear/Gear';
+import { Journal } from '../pages/Journal/Journal';
+import { Lore } from '../pages/Lore/Lore';
+import { QualsAndTals } from '../pages/QualsAndTals/QualsAndTals';
+import { Rules } from '../pages/Rules/Rules';
+import { Skills } from '../pages/Skills/Skills';
+import { Tager } from '../pages/Tager/Tager';
 
 
 @Component({
@@ -22,7 +33,18 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Main Page', component: MainPage },
-      { title: 'Attributes and Characteristics', component: AttrAndChars }
+      { title: 'Advancement and Achievements', component: AdvAndAchieve },
+      { title: 'Attributes and Characteristics', component: AttrAndChars },
+      { title: 'Combat', component: Combat },
+      { title: 'Details', component: Details },
+      { title: 'Full Sheet', component: FullSheet },
+      { title: 'Gear', component: Gear },
+      { title: 'Journal', component: Journal },
+      { title: 'Lore', component: Lore },
+      { title: 'Qualities and Talents', component: QualsAndTals },
+      { title: 'Rules', component: Rules },
+      { title: 'Skills', component: Skills },
+      { title: 'Tager', component: Tager },
     ];
 
   }
