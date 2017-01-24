@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'AttrAndChars',
@@ -12,4 +12,6 @@ export class AttrAndChars {
 
   
   }
+
 }
+

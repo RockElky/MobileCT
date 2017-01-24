@@ -14,6 +14,7 @@ import { QualsAndTals } from '../pages/QualsAndTals/QualsAndTals';
 import { Rules } from '../pages/Rules/Rules';
 import { Skills } from '../pages/Skills/Skills';
 import { Tager } from '../pages/Tager/Tager';
+import { Race } from '../pages/Race/Race';
 
 
 
@@ -32,6 +33,7 @@ import { Tager } from '../pages/Tager/Tager';
     QualsAndTals,
     Rules,
     Skills,
+    Race,
     Tager
   ],
   imports: [
@@ -52,6 +54,7 @@ import { Tager } from '../pages/Tager/Tager';
     QualsAndTals,
     Rules,
     Skills,
+    Race,
     Tager
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

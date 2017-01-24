@@ -15,6 +15,7 @@ import { QualsAndTals } from '../pages/QualsAndTals/QualsAndTals';
 import { Rules } from '../pages/Rules/Rules';
 import { Skills } from '../pages/Skills/Skills';
 import { Tager } from '../pages/Tager/Tager';
+import { Race } from '../pages/Race/Race'
 
 
 @Component({
@@ -23,7 +24,7 @@ import { Tager } from '../pages/Tager/Tager';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = MainPage;
+  rootPage: any = AttrAndChars;
 
   pages: Array<{title: string, component: any}>;
 
@@ -33,20 +34,20 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Main Page', component: MainPage },
-      { title: 'Advancement and Achievements', component: AdvAndAchieve },
+      { title: 'Race', component: Race },
       { title: 'Attributes and Characteristics', component: AttrAndChars },
+      { title: 'Skills', component: Skills },
+      { title: 'Qualities and Talents', component: QualsAndTals },
+      { title: 'Tager', component: Tager },
+      { title: 'Advancement and Achievements', component: AdvAndAchieve },
+      { title: 'Gear', component: Gear },
       { title: 'Combat', component: Combat },
       { title: 'Details', component: Details },
-      { title: 'Full Sheet', component: FullSheet },
-      { title: 'Gear', component: Gear },
       { title: 'Journal', component: Journal },
-      { title: 'Lore', component: Lore },
-      { title: 'Qualities and Talents', component: QualsAndTals },
+      { title: 'Full Sheet', component: FullSheet },
       { title: 'Rules', component: Rules },
-      { title: 'Skills', component: Skills },
-      { title: 'Tager', component: Tager },
+      { title: 'Lore', component: Lore },
     ];
-
   }
 
   initializeApp() {

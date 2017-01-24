@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
-
+import { Race } from '../Race/Race';
 
 import { AttrAndChars } from '../AttrAndChars/AttrAndChars';
 
@@ -14,7 +14,7 @@ export class MainPage {
     
   }
   AttrAndChars() {
-   this.navCtrl.setRoot(AttrAndChars);
+   this.navCtrl.setRoot(Race);
   }
   
 }
