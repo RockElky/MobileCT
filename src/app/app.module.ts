@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { MainPage } from '../pages/MainPage/MainPage';
-import { AttrAndChars } from '../pages/AttrAndChars/AttrAndChars';
+import { Attributes } from '../pages/Attributes/Attributes';
 import { Combat } from '../pages/Combat/Combat';
 import { Details } from '../pages/Details/Details';
 import { FullSheet } from'../pages/FullSheet/FullSheet';
@@ -23,7 +23,7 @@ import { Race } from '../pages/Race/Race';
     MyApp,
     MainPage,
     AdvAndAchieve,
-    AttrAndChars,
+    Attributes,
     Combat,
     Details,
     FullSheet,
@@ -44,7 +44,7 @@ import { Race } from '../pages/Race/Race';
     MyApp,
     MainPage,
     AdvAndAchieve,
-    AttrAndChars,
+    Attributes,
     Combat,
     Details,
     FullSheet,

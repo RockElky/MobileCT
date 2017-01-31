@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { MainPage } from '../pages/MainPage/MainPage';
-import { AttrAndChars } from '../pages/AttrAndChars/AttrAndChars';
+import { Attributes } from '../pages/Attributes/Attributes';
 import { Combat } from '../pages/Combat/Combat';
 import { Details } from '../pages/Details/Details';
 import { FullSheet } from'../pages/FullSheet/FullSheet';
@@ -24,7 +24,7 @@ import { Race } from '../pages/Race/Race'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = AttrAndChars;
+  rootPage: any = Attributes;
 
   pages: Array<{title: string, component: any}>;
 
@@ -35,7 +35,7 @@ export class MyApp {
     this.pages = [
       { title: 'Main Page', component: MainPage },
       { title: 'Race', component: Race },
-      { title: 'Attributes and Characteristics', component: AttrAndChars },
+      { title: 'Attributes', component: Attributes },
       { title: 'Skills', component: Skills },
       { title: 'Qualities and Talents', component: QualsAndTals },
       { title: 'Tager', component: Tager },
