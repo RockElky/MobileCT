@@ -24,7 +24,7 @@ import { Race } from '../pages/Race/Race'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Attributes;
+  rootPage: any = Race;
 
   pages: Array<{title: string, component: any}>;
 

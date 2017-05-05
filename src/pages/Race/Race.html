@@ -7,12 +7,38 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <div>
-    <label>Please Choose A Race</label>
-  <select>Select A Race
-    <option>Human</option>
-    <option>Lizard</option>
-</select>
+<!--<ion-content>
+  <div style="display: inline-block">
+    <label>Please Choose A Race:</label>
   </div>
+  <div style="display: inline-block;">
+    <select ([ngModel])="selectedNav" (change)="setNav(selectedNav)">
+          <option *ngFor="let r of navs" [value]="r"> {{r}} </option>
+        </select>
+      <div *ngIf="regTypeSelectedOption === 'Human'">
+        Human stuff
+      </div>
+      <div *ngIf="regTypeSelectedOption === 'Lizard'">
+        Lizard stuff
+      </div>
+      <div *ngIf="regTypeSelectedOption === 'Alien'">
+        Lizard stuff
+      </div>
+  </div>
+</ion-content>-->
+<ion-content>
+<div class="common_select_box">
+ <select  [(ngModel)]="selectedNav" (change)="setNav(navs)">
+      <option *ngFor="let q of navs" [value]="q"> {{q}} </option>
+    </select>
+    <div *ngIf="regTypeSelectedOption === 'Human'">
+      Human
+    </div>
+    <div *ngIf="regTypeSelectedOption === 'Lizard'">
+      Lizard
+    </div>
+    <div *ngIf="regTypeSelectedOption === 'Alien'">
+      Alien
+    </div>
+</div>
 </ion-content>
