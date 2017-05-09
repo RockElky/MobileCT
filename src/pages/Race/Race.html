@@ -7,38 +7,24 @@
   </ion-navbar>
 </ion-header>
 
-<!--<ion-content>
-  <div style="display: inline-block">
-    <label>Please Choose A Race:</label>
-  </div>
-  <div style="display: inline-block;">
-    <select ([ngModel])="selectedNav" (change)="setNav(selectedNav)">
-          <option *ngFor="let r of navs" [value]="r"> {{r}} </option>
-        </select>
-      <div *ngIf="regTypeSelectedOption === 'Human'">
-        Human stuff
-      </div>
-      <div *ngIf="regTypeSelectedOption === 'Lizard'">
-        Lizard stuff
-      </div>
-      <div *ngIf="regTypeSelectedOption === 'Alien'">
-        Lizard stuff
-      </div>
-  </div>
-</ion-content>-->
-<ion-content>
-<div class="common_select_box">
- <select  [(ngModel)]="selectedNav" (change)="setNav(navs)">
-      <option *ngFor="let q of navs" [value]="q"> {{q}} </option>
-    </select>
-    <div *ngIf="regTypeSelectedOption === 'Human'">
-      Human
-    </div>
-    <div *ngIf="regTypeSelectedOption === 'Lizard'">
-      Lizard
-    </div>
-    <div *ngIf="regTypeSelectedOption === 'Alien'">
-      Alien
-    </div>
-</div>
+<ion-content padding>
+  <ion-item style="display: inline-block;">
+    <ion-label>Please Choose A Race:</ion-label>
+    <ion-select  (ionChange)="setRaceContent(sRace)" [(ngModel)]="sRace">
+      <ion-option [value]="sRace" *ngFor = "let sRace of races"> {{sRace.name}} </ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-list *ngIf="selectContents">
+    <ion-item *ngFor="let content of selectContents">
+      <div>{{content.content}}</div>
+    </ion-item>
+  </ion-list>
+
+   
 </ion-content>
+<ion-footer>
+<div class="toAttr"><button class="nButton" ion-button (click)="Attributes();">Choose Attributes</button></div>
+<div class="toMain"><button class="lButton" ion-button (click)="MainPage();">Main Page</button></div>
+</ion-footer>
+
