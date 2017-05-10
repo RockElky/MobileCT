@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { Race } from '../Race/Race';
+import { Characteristics } from '../Characteristics/Characteristics';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -18,5 +19,11 @@ private AttrPoints = 4;
   decrement()
   {
     this.AttrPoints--;
+  }
+    Characteristics() {
+   this.navCtrl.setRoot(Characteristics);
+  }
+   Race() {
+   this.navCtrl.setRoot(Race);
   }
 }

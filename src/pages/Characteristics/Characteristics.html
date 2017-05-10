@@ -3,16 +3,15 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Attributes</ion-title>
+    <ion-title>Characteristics</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <div>
-
-    <ion-list>
+       <ion-list>
       <ion-item>
-        <div style="display:inline-block;">Agility</div>
+        <div style="display:inline-block;">Action Points</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
           {{AttrPoints}}
@@ -21,7 +20,34 @@
       </ion-item>
 
       <ion-item>
-        <div style="display:inline-block;">Strength</div>
+        <div style="display:inline-block;">Damage Bonus</div>
+        <div style="float:right;">
+          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
+          {{AttrPoints}}
+          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div style="display:inline-block;">Reflex</div>
+        <div style="float:right;">
+          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
+          {{AttrPoints}}
+          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div style="display:inline-block;">Wit</div>
+        <div style="float:right;">
+          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
+          {{AttrPoints}}
+          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <div style="display:inline-block;">Resilience</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
           {{AttrPoints}}
@@ -39,7 +65,7 @@
       </ion-item>
 
       <ion-item>
-        <div style="display:inline-block;">Intellect</div>
+        <div style="display:inline-block;">Orgone</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
           {{AttrPoints}}
@@ -48,7 +74,7 @@
       </ion-item>
 
       <ion-item>
-        <div style="display:inline-block;">Perception</div>
+        <div style="display:inline-block;">Combat</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
           {{AttrPoints}}
@@ -57,7 +83,7 @@
       </ion-item>
 
       <ion-item>
-        <div style="display:inline-block;">Presence</div>
+        <div style="display:inline-block;">Event</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
           {{AttrPoints}}
@@ -66,52 +92,7 @@
       </ion-item>
 
       <ion-item>
-        <div style="display:inline-block;">Coordination</div>
-        <div style="float:right;">
-          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
-          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
-        </div>
-      </ion-item>
-
-      <ion-item>
-        <div style="display:inline-block;">Brawn</div>
-        <div style="float:right;">
-          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
-          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
-        </div>
-      </ion-item>
-
-      <ion-item>
-        <div style="display:inline-block;">Wellness</div>
-        <div style="float:right;">
-          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
-          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
-        </div>
-      </ion-item>
-
-      <ion-item>
-        <div style="display:inline-block;">Insight</div>
-        <div style="float:right;">
-          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
-          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
-        </div>
-      </ion-item>
-
-      <ion-item>
-        <div style="display:inline-block;">Intuition</div>
-        <div style="float:right;">
-          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
-          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
-        </div>
-      </ion-item>
-
-      <ion-item>
-        <div style="display:inline-block;">Charisma</div>
+        <div style="display:inline-block;">Long Distance</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
           {{AttrPoints}}
@@ -123,6 +104,6 @@
 </ion-content>
 
 <ion-footer>
-<div class="toAttr"><button class="nButton" ion-button (click)="Characteristics();">Characteristics</button></div>
-<div class="toMain"><button class="lButton" ion-button (click)="Race();">Race</button></div>
+<div class="toAttr"><button class="nButton" ion-button (click)="Attributes();">Attributes</button></div>
+<div class="toMain"><button class="lButton" ion-button (click)="Skills();">Skills</button></div>
 </ion-footer>

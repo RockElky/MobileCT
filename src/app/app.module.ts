@@ -15,6 +15,7 @@ import { Rules } from '../pages/Rules/Rules';
 import { Skills } from '../pages/Skills/Skills';
 import { Tager } from '../pages/Tager/Tager';
 import { Race } from '../pages/Race/Race';
+import { Characteristics } from '../pages/Characteristics/Characteristics';
 
 
 
@@ -34,6 +35,7 @@ import { Race } from '../pages/Race/Race';
     Rules,
     Skills,
     Race,
+    Characteristics,
     Tager
   ],
   imports: [
@@ -55,6 +57,7 @@ import { Race } from '../pages/Race/Race';
     Rules,
     Skills,
     Race,
+    Characteristics,
     Tager
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

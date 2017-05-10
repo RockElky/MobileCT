@@ -4,6 +4,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { MainPage } from '../pages/MainPage/MainPage';
 import { Attributes } from '../pages/Attributes/Attributes';
+import { Characteristics } from '../pages/Characteristics/Characteristics';
 import { Combat } from '../pages/Combat/Combat';
 import { Details } from '../pages/Details/Details';
 import { FullSheet } from'../pages/FullSheet/FullSheet';
@@ -36,6 +37,7 @@ export class MyApp {
       { title: 'Main Page', component: MainPage },
       { title: 'Race', component: Race },
       { title: 'Attributes', component: Attributes },
+      { title: 'Characteristics', component: Characteristics },
       { title: 'Skills', component: Skills },
       { title: 'Qualities and Talents', component: QualsAndTals },
       { title: 'Tager', component: Tager },
