@@ -13,9 +13,9 @@
       <ion-item>
         <div style="display:inline-block;">Action Points</div>
         <div style="float:right;">
-          <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
-          <ion-icon name="add-circle" (click)="increment()"></ion-icon>
+          <ion-icon name="remove-circle" (click)="decrement(this.ActionPoints)"></ion-icon>
+          {{ActionPoints}}
+          <ion-icon name="add-circle" (click)="increment(this.ActionPoints)"></ion-icon>
         </div>
       </ion-item>
 
@@ -23,7 +23,7 @@
         <div style="display:inline-block;">Damage Bonus</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{DamagePoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -32,7 +32,7 @@
         <div style="display:inline-block;">Reflex</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{RefPoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -41,7 +41,7 @@
         <div style="display:inline-block;">Wit</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{WitPoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -50,7 +50,7 @@
         <div style="display:inline-block;">Resilience</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{ResiPoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -59,7 +59,7 @@
         <div style="display:inline-block;">Tenacity</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{TenaPoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -68,7 +68,7 @@
         <div style="display:inline-block;">Orgone</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{OrgPoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -77,7 +77,7 @@
         <div style="display:inline-block;">Combat</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{ComPoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -86,7 +86,7 @@
         <div style="display:inline-block;">Event</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{EvePoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -95,7 +95,7 @@
         <div style="display:inline-block;">Long Distance</div>
         <div style="float:right;">
           <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
-          {{AttrPoints}}
+          {{LongPoints}}
           <ion-icon name="add-circle" (click)="increment()"></ion-icon>
         </div>
       </ion-item>
@@ -104,6 +104,7 @@
 </ion-content>
 
 <ion-footer>
-<div class="toAttr"><button class="nButton" ion-button (click)="Attributes();">Attributes</button></div>
-<div class="toMain"><button class="lButton" ion-button (click)="Skills();">Skills</button></div>
+<div class="toMain"><button class="lButton" ion-button (click)="Attributes();">Attributes</button></div>
+<div class="toAttr"><button class="nButton" ion-button (click)="Skills();">Skills</button></div>
+
 </ion-footer>
