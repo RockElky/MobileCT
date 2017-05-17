@@ -24,28 +24,26 @@ export class Attributes {
 
 
   }
-  increment(iagi,istr,iten,iint,iper,ipres,icoord,ibrawn,iwell,iins,iintu,ichar) {
-    iagi = this.AgiPoints++;
-    istr = this.StrPoints++;
-    iten = this.TenPoints++;
-    iint = this.IntPoints++;
-    iper = this.PerPoints++;
-    ipres = this.PresPoints++;
-    icoord = this.CoordPoints++;
-    ibrawn = this.BrawnPoints++;
-   iwell = this.WellPoints++;
-    iins = this.InsPoints++;
-    iintu = this.IntuitPoints++;
-    ichar = this.CharPoints++;
+  increment(attr) {
+    console.log(attr);
+    attr++;
+    this.InsPoints++;
+    
   }
-  decrement(dagi,dstr,dten,dint,dper,dpres,dcoord,dbrawn,dwell,dins,dintu,dchar) {
+
+EvalAttributes()
+{
+  console.log(this.CoordPoints);
+}
+
+  decrement(dagi, dstr, dten, dint, dper, dpres, dcoord, dbrawn, dwell, dins, dintu, dchar) {
     dagi = this.AgiPoints--;
     dstr = this.StrPoints--;
     dten = this.TenPoints--;
     dint = this.IntPoints--;
     dper = this.PerPoints--;
     dpres = this.PresPoints--;
-   dcoord = this.CoordPoints--;
+    dcoord = this.CoordPoints--;
     dbrawn = this.BrawnPoints--;
     dwell = this.WellPoints--;
     dins = this.InsPoints--;

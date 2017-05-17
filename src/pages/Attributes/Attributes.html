@@ -68,9 +68,9 @@
       <ion-item>
         <div style="display:inline-block;">Coordination</div>
         <div style="float:right;">
-          <ion-icon name="remove-circle" (click)="decrement(dcoord)"></ion-icon>
-          {{CoordPoints}}
-          <ion-icon name="add-circle" (click)="increment(icoord)"></ion-icon>
+          <ion-icon name="remove-circle" (click)="CoordPoints = CoordPoints - 1; EvalAttributes()"></ion-icon>
+          <input type="hidden" [(ngModel)]="CoordPoints" />{{CoordPoints}}
+          <ion-icon name="add-circle" (click)="CoordPoints = CoordPoints + 1"></ion-icon>
         </div>
       </ion-item>
 
@@ -95,9 +95,9 @@
       <ion-item>
         <div style="display:inline-block;">Insight</div>
         <div style="float:right;">
-          <ion-icon name="remove-circle" (click)="decrement(dins)"></ion-icon>
+          <ion-icon name="remove-circle" (click)="decrement(InsPoints)"></ion-icon>
           {{InsPoints}}
-          <ion-icon name="add-circle" (click)="increment(iins)"></ion-icon>
+          <ion-icon name="add-circle" (click)="increment(InsPoints)"></ion-icon>
         </div>
       </ion-item>
 
